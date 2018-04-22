@@ -1,0 +1,8 @@
+sc_node_not_relation -> concept_viande;;
+
+concept_viande => nrel_main_idtf:
+[мясо] (* <- lang_ru;; *);
+[viande] (* <- lang_en;; *);;
+
+
+

@@ -1,0 +1,8 @@
+sc_node_not_relation -> concept_vegetable;;
+
+concept_vegetable => nrel_main_idtf:
+[овощ] (* <- lang_ru;; *);
+[vegetable] (* <- lang_en;; *);;
+
+
+

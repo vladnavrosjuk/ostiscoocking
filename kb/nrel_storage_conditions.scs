@@ -1,0 +1,16 @@
+    sc_node_norole_relation -> nrel_storage_conditions;;
+
+    nrel_storage_conditions=> nrel_main_idtf:[условия хранения*] (* <- lang_ru;; *);;
+    nrel_storage_conditions=> nrel_main_idtf: [условия хранения*] (* <- lang_en;; *);;
+
+    nrel_storage_conditions=> nrel_idtf: [быть условием хранения*] (* <- lang_ru;; *);;
+    nrel_storage_conditions=> nrel_idtf: [быть условием хранения ингридиента*] (* <- lang_ru;; *);;
+
+
+
+
+    nrel_storage_conditions<- antireflexive_relation; antitransitive_relation; antisimmetric_relatoin;;
+    nrel_storage_conditions<- relation; binary_relation;;
+    nrel_storage_conditions<- oriented_relation;;
+
+

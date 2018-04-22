@@ -1,0 +1,14 @@
+sc_node_norole_relation -> nrel_kkal;;
+
+nrel_kkal=> nrel_main_idtf:[калорий на 100 грамм*] (* <- lang_ru;; *);;
+nrel_kkal=> nrel_main_idtf: [kkal on 100gr*] (* <- lang_en;; *);;
+
+nrel_kkal=> nrel_idtf: [быть калроиями на 100 гр*] (* <- lang_ru;; *);;
+nrel_kkal=> nrel_idtf: [быть  калроиями на 100 гр ингридиента*] (* <- lang_ru;; *);;
+
+
+
+
+nrel_kkal<- antireflexive_relation; antitransitive_relation; antisimmetric_relatoin;;
+nrel_kkal<- relation; binary_relation;;
+nrel_kkal<- oriented_relation;;

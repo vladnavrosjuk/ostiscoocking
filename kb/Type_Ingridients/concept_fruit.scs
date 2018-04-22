@@ -1,0 +1,8 @@
+sc_node_not_relation -> concept_fruit;;
+
+concept_fruit => nrel_main_idtf:
+[фрукт] (* <- lang_ru;; *);
+[fruit] (* <- lang_en;; *);;
+
+
+

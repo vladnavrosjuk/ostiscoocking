@@ -1,0 +1,8 @@
+sc_node_not_relation -> concept_ingridient;;
+
+concept_ingridient => nrel_main_idtf:
+[ингридиент] (* <- lang_ru;; *);
+[ingridient] (* <- lang_en;; *);;
+
+
+

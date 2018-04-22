@@ -1,0 +1,21 @@
+
+sc_node_not_relation -> concept_recept_kebab;;
+
+concept_recept_kebab => nrel_main_idtf:
+[кебаб] (* <- lang_ru;; *);
+[kebab] (* <- lang_en;; *);;
+concept_recept_kebab <- concept_recept;;
+concept_recept_kebab<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://chickpea.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_recept_kebab => nrel_ingridients: concept_tomato;;
+concept_recept_kebab => nrel_ingridients: concept_cucumber;;

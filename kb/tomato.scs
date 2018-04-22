@@ -1,0 +1,66 @@
+sc_node_not_relation -> concept_tomato;;
+
+concept_tomato => nrel_main_idtf:
+[помидор] (* <- lang_ru;; *);
+[tomato] (* <- lang_en;; *);;
+concept_tomato <- concept_ingridient;;
+concept_tomato<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://tomato.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_tomato => nrel_type:concept_vegetable;;
+concept_tomato => nrel_kkal : 20_kkal
+
+(*
+=> nrel_main_idtf:
+[20 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+concept_tomato => nrel_price : 100_rub
+(*
+=> nrel_main_idtf:
+[100 рублей]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_tomato => nrel_storage_time: 1_moth
+
+(*
+=> nrel_main_idtf:
+[1 месяц]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_tomato => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_tomato => nrel_analog: concept_eggplant;;
+
+

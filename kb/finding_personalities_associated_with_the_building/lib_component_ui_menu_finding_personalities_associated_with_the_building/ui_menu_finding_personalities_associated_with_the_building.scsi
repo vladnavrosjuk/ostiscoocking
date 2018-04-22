@@ -1,0 +1,15 @@
+ui_menu_finding_personalities_associated_with_the_building <- ui_user_command_class_atom; ui_user_command_class_view_kb;
+
+=> nrel_main_idtf: [Найти личностей связанных со зданием] (* <- lang_ru;;*);
+=> nrel_main_idtf: [Find personalities associated with the building] (* <- lang_en;;*);;
+ui_menu_finding_personalities_associated_with_the_building => ui_nrel_command_template:
+	[*
+		action_finding_personalities_associated_with_the_building _-> ._action_finding_personalities_associated_with_the_building_instance
+			(*
+			_-> ui_arg_1;;
+			*);;
+		._action_finding_personalities_associated_with_the_building_instance _<- question;;
+	*];;
+
+ui_menu_finding_personalities_associated_with_the_building => ui_nrel_command_lang_template: [Личности связанные с зданием: $ui_arg_1] (* <- lang_ru;;*);;
+ui_menu_finding_personalities_associated_with_the_building => ui_nrel_command_lang_template: [Personalities associated with the building: $ui_arg_1] (* <- lang_en;;*);;

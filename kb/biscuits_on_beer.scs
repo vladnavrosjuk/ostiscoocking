@@ -1,0 +1,159 @@
+biscuits_on_beer
+	<-sc_node_not_relation;
+
+	=>nrel_main_idtf: [Печенье_на_пиве] (*<-lang_ru;;*);
+		  	[Biscuits_on_beer] (*<-lang_en;;*);
+
+	=>nrel_ingredient: ...
+		(*
+		<-concept_beer
+			(*
+			<-concept_quantity;;
+			<=nrel_value: ...
+				(*
+				->rrel_glass: 0.5 //еденица измерения стакан (похоже на хуйню)
+					(*
+					<-concept_number;;
+					*);;
+				*);;
+			*);;
+		
+		<-concept_butter
+			(*
+			<-concept_quantity;;
+			<=nrel_value: ...
+				(*
+				->rrel_g: 250
+					(*
+					<-concept_number;;
+					*);;
+				*);;
+			*);;
+		<-concept_flour
+			(*
+			<-concept_quantity;;
+			<=nrel_value: ...
+				(*
+				->rrel_glass: 2
+					(*
+					<-concept_number;;
+					*);;
+				*);;
+			*);;
+		*);
+
+	<=nrel_sequencing: ...
+		(*
+		->rrel_one: ...
+			(*
+			<- rrel_key_sc_element: ... 
+                       		(* 
+                        	<- sc_explanation;;
+
+ 		        	<= nrel_sc_text_translation: ... 
+                        		(*
+					->[1.Слегка размягчённое сливочное масло или качественный маргарин, перетрите с мукой в крошку.] 
+						(*<-lang_ru;;*);; 
+                         		*);;
+                        	=> nrel_main_idtf: [Первый шаг:] (*<- lang_ru;;*);;
+				*);;
+			*);;
+		->rrel_two: ...
+			(*
+			<- rrel_key_sc_element: ... 
+                       		(* 
+                        	<- sc_explanation;;
+
+ 		        	<= nrel_sc_text_translation: ... 
+                        		(*
+					->[2.Влейте пиво и замесите мягкое тесто.] 
+						(*<-lang_ru;;*);; 
+                         		*);;
+                        	=> nrel_main_idtf: [Второй шаг:] (*<- lang_ru;;*);;
+				*);;
+			*);;
+		->rrel_three: ...
+			(*
+			<- rrel_key_sc_element: ... 
+                       		(* 
+                        	<- sc_explanation;;
+
+ 		        	<= nrel_sc_text_translation: ... 
+                        		(*
+					->[3.Поместите его в холодильник на 2-3 часа. Это время необходимо обязательно выдержать, чтобы печенье получилось воздушным.] 
+						(*<-lang_ru;;*);; 
+                         		*);;
+                        	=> nrel_main_idtf: [Третий шаг:] (*<- lang_ru;;*);;
+				*);;
+			*);;
+		->rrel_four: ...
+			(*
+			<- rrel_key_sc_element: ... 
+                       		(* 
+                        	<- sc_explanation;;
+
+ 		        	<= nrel_sc_text_translation: ... 
+                        		(*
+					->[4.Посыпьте стол не мукой, а плотным слоем сахара.] 
+						(*<-lang_ru;;*);; 
+                         		*);;
+                        	=> nrel_main_idtf: [Четвертый шаг:] (*<- lang_ru;;*);;
+				*);;
+			*);;
+		->rrel_five: ...
+			(*
+			<- rrel_key_sc_element: ... 
+                       		(* 
+                        	<- sc_explanation;;
+
+ 		        	<= nrel_sc_text_translation: ... 
+                        		(*
+					->[5.Раскатайте на нём кусок теста в пласт, толщиной около 0,5 см. Если тесто разрезать на ромбы или квадраты, не будет оставаться излишков. Но можно выдавливать и кружочки.] 
+						(*<-lang_ru;;*);; 
+                         		*);;
+                        	=> nrel_main_idtf: [Пятый шаг:] (*<- lang_ru;;*);;
+				*);;
+			*);;
+		->rrel_six: ...
+			(*
+			<- rrel_key_sc_element: ... 
+                       		(* 
+                        	<- sc_explanation;;
+
+ 		        	<= nrel_sc_text_translation: ... 
+                        		(*
+					->[6.Чтобы печенье не было уж совсем скучным, можно сделать рельеф при помощи вилки.] 
+						(*<-lang_ru;;*);; 
+                         		*);;
+                        	=> nrel_main_idtf: [Шестой шаг:] (*<- lang_ru;;*);;
+				*);;
+			*);;
+		->rrel_seven: ...
+			(*
+			<- rrel_key_sc_element: ... 
+                       		(* 
+                        	<- sc_explanation;;
+
+ 		        	<= nrel_sc_text_translation: ... 
+                        		(*
+					->[7.Переложите печенье на противень и отправьте в разогретую духовку до 200 градусов 15-20 минут.] 
+						(*<-lang_ru;;*);; 
+                         		*);;
+                        	=> nrel_main_idtf: [Седьмой шаг:] (*<- lang_ru;;*);;
+				*);;
+			*);;
+		->rrel_eight: ...
+			(*
+			<- rrel_key_sc_element: ... 
+                       		(* 
+                        	<- sc_explanation;;
+
+ 		        	<= nrel_sc_text_translation: ... 
+                        		(*
+					->[8.Готовое печенье, остудите.] 
+						(*<-lang_ru;;*);; 
+                         		*);;
+                        	=> nrel_main_idtf: [Восьмой шаг:] (*<- lang_ru;;*);;
+				*);;
+			*);;
+		*);;

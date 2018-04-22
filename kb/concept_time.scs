@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_time;;
+
+concept_time => nrel_main_idtf:
+[время] (* <- lang_ru;; *);
+[time] (* <- lang_en;; *);;

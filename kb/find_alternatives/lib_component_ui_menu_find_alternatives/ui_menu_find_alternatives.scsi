@@ -1,0 +1,27 @@
+ui_menu_find_alternatives <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_find_alternatives => nrel_main_idtf: 
+	[Найти альтернативные продукты] 
+	(* <- lang_ru;; *);;
+
+ui_menu_find_alternatives => nrel_main_idtf: 
+	[What can be obtained from this object?] 
+	(* <- lang_en;; *);;
+
+ui_menu_find_alternatives => ui_nrel_command_template:
+	[*
+		question_find_alternatives _-> ._question_find_alternatives_instance
+			(*
+			_-> rrel_dividend:: ui_arg_1;;
+			*);;
+		._question_find_alternatives_instance _<- question;;
+	*];;
+
+ui_menu_find_alternatives => ui_nrel_command_lang_template: 
+	[Какие элементы можно получить из данного предмета: $ui_arg_1 ] 
+	(* <- lang_ru;; *);;
+
+ui_menu_find_alternatives => ui_nrel_command_lang_template: 
+	[What can be obtained from this object: $ui_arg_1 ] 
+	(* <- lang_en;; *);;
+

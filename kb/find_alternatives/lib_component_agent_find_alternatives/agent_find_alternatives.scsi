@@ -1,0 +1,175 @@
+agent_find_alternatives
+=> nrel_main_idtf:
+	[агентная scp-программа поиска составляющих предмета] (* <- lang_ru;; *);
+	
+	[agent scp-program of finding object structure] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_find_alternatives
+(*
+	-> rrel_params: ..agent_find_alternatives_params 
+	(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+	*);;
+
+	-> rrel_operators: ..agent_find_alternatives_operatorset 
+	(*
+		-> rrel_init: .find_alternatives_operator1 
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: ..agent_find_alternatives_operator2;;
+		*);;
+
+		-> ..agent_find_alternatives_operator2 
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_find_alternatives;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: ..agent_find_alternatives_operator2a;;
+			=> nrel_else: ..agent_find_alternatives_operatorreturn;;
+		*);;
+
+		-> ..agent_find_alternatives_operator2a 
+		(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _question;;
+
+			=> nrel_then: ..agent_find_alternatives_operator3;;
+			=> nrel_else: ..agent_find_alternatives_operatorreturn;;
+		*);;
+		
+		-> ..agent_find_alternatives_operator3 
+		(*
+			<- printEl;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+
+			=> nrel_goto: ..agent_find_alternatives_operator4;;
+		*);;
+
+		-> ..agent_find_alternatives_operator4
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _altern;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_analog;;
+
+			=> nrel_goto: ..agent_find_alternatives_operator5;;
+		*);;
+
+		//формируем ответ
+		-> ..agent_find_alternatives_operator5 
+		(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+			=> nrel_goto: ..agent_find_alternatives_operator7;;
+		*);;
+
+		-> ..agent_find_alternatives_operator7
+		(*
+			<- searchSetStr5;;
+		
+			-> rrel_1: rrel_assign: rrel_scp_var: _retsept;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc14;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc5;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ingridients;;
+
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _set;;
+
+			=> nrel_then: ..agent_find_alternatives_operator9;;
+			=> nrel_else: ..agent_find_alternatives_operatorreturn;;
+		*);;
+
+		-> ..agent_find_alternatives_operator9
+		(*
+			<- searchElStr3;;	
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _set;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc7;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _el;;
+
+			=> nrel_then: ..agent_find_alternatives_operator10;;
+			=> nrel_else: ..agent_find_alternatives_operatorgen_answer;;
+		*);;
+
+		-> ..agent_find_alternatives_operator10
+		(*
+			<- eraseEl;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc7;;
+
+			=> nrel_goto: ..agent_find_alternatives_operator11;;
+		*);;
+
+		-> ..agent_find_alternatives_operator11
+		(*
+			<- searchElStr5;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: _el;;
+			-> rrel_2: rrel_assign: rrel_common: rrel_scp_var: _arc8;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc9;;
+	  		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ingridients;;
+
+			=> nrel_goto: ..agent_find_alternatives_operator11b;;
+		*);;
+
+		-> ..agent_find_alternatives_operator11b
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _el;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc81324;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _altern;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc9;;
+	  		-> rrel_5: rrel_fixed: rrel_scp_const: nrel_ingridients;;
+
+			=> nrel_goto: ..agent_find_alternatives_operator11a;;
+		*);;
+
+		-> ..agent_find_alternatives_operator11a
+		(*
+			<- eraseEl;;
+		
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc8;;
+
+			=> nrel_goto: ..agent_find_alternatives_operator9;;
+		*);;
+
+		-> ..agent_find_alternatives_operatorgen_answer
+		(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc4;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc3;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: ..agent_find_alternatives_operatorreturn;;
+		*);;
+
+		-> ..agent_find_alternatives_operatorreturn 
+		(*
+			<- return;;
+		*);;
+	*);;
+*);;

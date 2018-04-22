@@ -1,0 +1,8 @@
+sc_node_not_relation -> concept_apple;;
+
+concept_apple => nrel_main_idtf:
+[яблоко] (* <- lang_ru;; *);
+[apple] (* <- lang_en;; *);;
+
+
+

@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_potato;;
+
+concept_potato => nrel_main_idtf:
+[картошка] (* <- lang_ru;; *);
+[potato] (* <- lang_en;; *);;
+concept_potato <- concept_ingridient;;
+concept_potato<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://potato.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_potato => nrel_type:concept_vegetable;;
+concept_potato => nrel_kkal : 30_kkal
+
+(*
+=> nrel_main_idtf:
+[30 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+concept_potato => nrel_storage_time: 12_moth
+
+(*
+=> nrel_main_idtf:
+[12 месяцеве]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_potato => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_potato => nrel_analog: concept_eggplant;;
+
+

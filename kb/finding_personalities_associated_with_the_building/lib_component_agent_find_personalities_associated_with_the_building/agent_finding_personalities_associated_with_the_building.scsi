@@ -1,0 +1,336 @@
+agent_finding_personalities_associated_with_the_building
+=> nrel_main_idtf:
+	[агентная scp-программа нахождения личностей связанных со зданием] (* <- lang_ru;; *);
+	[agent scp-program of checking domains of relation] (* <- lang_en;; *);
+	<- agent_scp_program;;
+
+scp_program -> agent_finding_personalities_associated_with_the_building 
+	(*
+	-> rrel_params: .agent_finding_personalities_associated_with_the_building_params 
+		(*
+		-> rrel_1: rrel_in: _event;;
+		-> rrel_2: rrel_in: _input_arc;;
+		*);;
+
+	-> rrel_operators: ..agent_finding_personalities_associated_with_the_building_operator_set 
+		(*
+		-> rrel_init: ..agent_finding_personalities_associated_with_the_building_operator1A 
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+			-> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _quest;;
+
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator1B;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1B
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: action_finding_personalities_associated_with_the_building;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_then: ..agent_finding_personalities_associated_with_the_building_operator1C;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator_return;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1C
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _entered_node;;										
+
+			=> nrel_then: ..agent_finding_personalities_associated_with_the_building_operator_gen_answer;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator_message;;
+			*);;
+
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator_gen_answer
+			(*
+			<- genEl;;
+
+			-> rrel_1: rrel_assign: rrel_node: rrel_const: rrel_scp_var: _ansver_for_agent;;
+
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator1D0;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D0
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _some_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entered_node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed:  rrel_node: rrel_scp_const: nrel_location;;
+			
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _SET;;
+			//-> rrel_set_1: rrel_assign: rrel_scp_var: _ansver_for_agent;;
+			-> rrel_set_2: rrel_assign: rrel_scp_var: _ARC_SET;;
+			=> nrel_then: ..agent_finding_personalities_associated_with_the_building_operator1D1;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator_message;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D1
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _some_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entered_node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed:  rrel_node: rrel_scp_const: nrel_temporal_decomposition;;
+			
+			-> rrel_set_1: rrel_fixed: rrel_scp_var: _SET;;
+			//-> rrel_set_1: rrel_fixed: rrel_scp_var: _ARC_SET;;
+			=> nrel_then: ..agent_finding_personalities_associated_with_the_building_operator1D2;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator_message;;
+			*);;
+/*
+			-> ..agent_finding_personalities_associated_with_the_building_operator1D00
+			(*
+			<-  genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entered_node;;			
+			//-> rrel_set_1: rrel_assign: rrel_scp_var: _SET;;
+			//-> rrel_set_1: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			//-> rrel_set_2: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator1D10;;
+			//=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator_message;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D10
+			(*
+			<- searchSetStr5;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _some_node;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entered_node;;
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed:  rrel_node: rrel_scp_const: nrel_temporal_decomposition;;
+			
+			//-> rrel_set_2: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			//-> rrel_set_1: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			=> nrel_then: ..agent_finding_personalities_associated_with_the_building_operator1D2;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator_message;;
+			*);;
+*/
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D2
+			(*
+			<- searchElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _SET;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc2;;
+			-> rrel_3: rrel_assign: rrel_scp_var: _ORGANISATION;;										
+
+			=> nrel_then: ..agent_finding_personalities_associated_with_the_building_operator1D3;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator1D5;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D3
+			(*
+			<- eraseEl;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: rrel_erase: _arc2;;
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator1D4;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D4
+			(*
+			<- searchSetStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ORGANISATION;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _arc1;;
+			-> rrel_3: rrel_assign: rrel_scp_var: rrel_node: _PERS;;
+			
+			//-> rrel_set_3: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			//-> rrel_set_2: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			=> nrel_then: ..agent_finding_personalities_associated_with_the_building_operator1D;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator_message;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D
+			(*
+			<- searchSetStr3;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _n;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm:  _some_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arc1;;
+			
+			-> rrel_set_1: rrel_assign: rrel_scp_var: _some;;
+		//	-> rrel_set_2: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			=> nrel_then: ..proc_run_test_2;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator1D2;;
+			*);;
+
+		-> ..proc_run_test_2 (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: find_data1;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _some;;
+				//-> rrel_2: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _dat1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _dat2;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_run_all_tests_wait_test_2;;
+		*);;
+
+		-> ..proc_run_all_tests_wait_test_2 (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..wiw1;;
+		*);;
+
+		-> ..wiw1 (*
+			<- print;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dat1;;
+
+			=> nrel_goto: ..wiw2;;
+		*);;
+
+		-> ..wiw2 (*
+			<- print;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _dat2;;
+
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator1D6;;
+		*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D6  //////////////////////
+			(*
+			<- searchElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ORGANISATION;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_common: _ARC;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entered_node;;
+			=> nrel_then: ..agent_finding_personalities_associated_with_the_building_operator1D7;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator1D7;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D7  ////////////////////////////,,,,
+			(*
+			<- searchSetStr3;;
+			-> rrel_1: rrel_assign: rrel_scp_var: _asfd;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _some_arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ARC;;
+
+			->rrel_set_1: rrel_assign: rrel_scp_var: _ORG_CONT_SET;;
+			=> nrel_then: ..proc_run_test_3;;
+			=> nrel_else: ..agent_finding_personalities_associated_with_the_building_operator_message;;
+			*);;
+
+		-> ..proc_run_test_3 (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: find_data1;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _ORG_CONT_SET;;
+			//	-> rrel_2: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+				-> rrel_2: rrel_assign: rrel_scp_var: _dat_org1;;
+				-> rrel_3: rrel_assign: rrel_scp_var: _dat_org2;;
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_run_all_tests_wait_test_3;;
+		*);;
+
+		-> ..proc_run_all_tests_wait_test_3 (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_run_test_4;;
+		*);;
+
+		-> ..proc_run_test_4 (*
+			<- call;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: add_in_ansv;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: ... (*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _entered_node;;
+				-> rrel_2: rrel_fixed: rrel_scp_var: _ORGANISATION;;
+				-> rrel_3: rrel_fixed: rrel_scp_var: _PERS;;
+				-> rrel_4: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+
+				-> rrel_5: rrel_fixed: rrel_scp_var: _dat_org1;;
+				-> rrel_6: rrel_fixed: rrel_scp_var: _dat_org2;;
+				-> rrel_7: rrel_fixed: rrel_scp_var: _dat1;;
+				-> rrel_8: rrel_fixed: rrel_scp_var: _dat2;;
+			
+			*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..proc_run_all_tests_wait_test_4;;
+		*);;
+
+		-> ..proc_run_all_tests_wait_test_4 (*
+			<- waitReturn;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr;;
+
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator1D2;;
+		*);;
+
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator1D5(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _ansver_for_agent;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_pos_const_perm: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _entered_node;;
+
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator_answer;;
+			*);;
+
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator_answer//конечный ответ генерю
+			(*
+			<- genElStr5;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+			-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _ansver_for_agent;;							
+			-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
+			-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator_success;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator_success
+			(*
+			<- genElStr3;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: question_finished_successfully;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _quest;;
+
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator_return;;
+			*);;
+/*			
+		-> ..agent_finding_personalities_associated_with_the_building_operator_message/////////////////////////////
+			(*
+			<- call;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_const: proc_of_adding_validating_message;;
+			-> rrel_2: rrel_fixed: rrel_scp_const: .agent_finding_personalities_associated_with_the_building_operator_message_params 
+				(*
+				-> rrel_1: rrel_fixed: rrel_scp_var: _quest;;
+				-> rrel_2: rrel_fixed: rrel_scp_const: [Wrong first parameter! It must be a structure(rrel_struct).];;
+				*);;
+			-> rrel_3: rrel_assign: rrel_scp_var: _descr1;;
+
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator_message_wait;;
+			*);;
+
+		-> ..agent_finding_personalities_associated_with_the_building_operator_message_wait
+			(*
+			<- waitReturn;;
+
+			-> rrel_1: rrel_fixed: rrel_scp_var: _descr1;;
+
+			=> nrel_goto: ..agent_finding_personalities_associated_with_the_building_operator_return;;
+			*);;
+*/
+		-> ..agent_finding_personalities_associated_with_the_building_operator_return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

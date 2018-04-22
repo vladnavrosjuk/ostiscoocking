@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_cucumber;;
+
+concept_cucumber => nrel_main_idtf:
+[огурец] (* <- lang_ru;; *);
+[cucumber] (* <- lang_en;; *);;
+concept_cucumber <- concept_ingridient;;
+concept_cucumber<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://cucumber.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_cucumber => nrel_type:concept_vegetable;;
+concept_cucumber => nrel_kkal : 15_kkal
+
+(*
+=> nrel_main_idtf:
+[16 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+concept_cucumber => nrel_storage_time: 1_moth
+
+(*
+=> nrel_main_idtf:
+[1 месяц]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_cucumber => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+
+
+

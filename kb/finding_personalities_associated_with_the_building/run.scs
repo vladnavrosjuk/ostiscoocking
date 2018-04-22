@@ -1,0 +1,22 @@
+
+
+scp_program -> run 
+	(*
+	-> rrel_params: ... ;;
+
+	-> rrel_operators: ... 
+		(*
+		-> rrel_init: ..operator1A 
+			(*
+			<- print;;
+			-> rrel_1: rrel_fixed: rrel_scp_const: [qwertyuiop];;
+
+			=> nrel_goto: .._return;;
+			*);;
+
+		-> .._return
+			(*
+			<- return;;
+			*);;
+		*);;
+	*);;

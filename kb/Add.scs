@@ -1,0 +1,101 @@
+concept_beer
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [пиво]
+		(* <- lang_ru;; *);;
+
+concept_butter
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [масло]
+		(* <- lang_ru;; *);;
+
+concept_flour
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [мука]
+		(* <- lang_ru;; *);;
+
+concept_quantity
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [количество]
+		(* <- lang_ru;; *);;
+
+concept_number
+	<- sc_node_not_relation;
+	=> nrel_main_idtf: [число]
+		(* <- lang_ru;; *);;
+
+
+
+
+
+
+nrel_value
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [значение*]
+		(* <- lang_ru;; *);;
+
+nrel_ingredient
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [ингедиенты*]
+		(* <- lang_ru;; *);;
+
+nrel_sequencing
+	<- sc_node_norole_relation;
+	=> nrel_main_idtf: [последовательность действий*]
+		(* <- lang_ru;; *);;
+
+
+
+
+
+
+
+
+rrel_g
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [грамм']
+		(* <- lang_ru;; *);;
+
+rrel_glass
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [стакан']
+		(* <- lang_ru;; *);;
+
+rrel_one
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [1']
+		(* <- lang_ru;; *);;
+
+rrel_two
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [2']
+		(* <- lang_ru;; *);;
+
+rrel_three
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [3']
+		(* <- lang_ru;; *);;
+
+rrel_four
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [4']
+		(* <- lang_ru;; *);;
+
+rrel_five
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [5']
+		(* <- lang_ru;; *);;
+
+rrel_six
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [6']
+		(* <- lang_ru;; *);;
+
+rrel_seven
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [7']
+		(* <- lang_ru;; *);;
+
+rrel_eight
+	<- sc_node_role_relation;
+	=> nrel_main_idtf: [8']
+		(* <- lang_ru;; *);;

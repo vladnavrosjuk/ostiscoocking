@@ -1,0 +1,57 @@
+
+sc_node_not_relation -> concept_chicken_filet;;
+
+concept_chicken_filet => nrel_main_idtf:
+[куриное филе] (* <- lang_ru;; *);
+[chicken filet] (* <- lang_en;; *);;
+concept_chicken_filet <- concept_ingridient;;
+concept_chicken_filet<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://chicken_filet.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_chicken_filet => nrel_type:concept_viande;;
+concept_chicken_filet => nrel_kkal : 110_kkal
+
+(*
+=> nrel_main_idtf:
+[110 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+concept_chicken_filet => nrel_storage_time: 12_moth
+
+(*
+=> nrel_main_idtf:
+[12 месяцев]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_chicken_filet => nrel_storage_conditions: freezer
+
+(*
+=> nrel_main_idtf:
+[в морозилке]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_chicken_filet => nrel_analog: concept_chickpea;;
+
+
