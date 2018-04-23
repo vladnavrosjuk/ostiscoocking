@@ -1,0 +1,81 @@
+sc_node_not_relation -> concept_mayonnaise;;
+
+concept_mayonnaise => nrel_main_idtf:
+[майонез] (* <- lang_ru;; *);
+[mayonnaise] (* <- lang_en;; *);;
+concept_mayonnaise <- concept_ingridient;;
+concept_mayonnaise<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/mayonnaise.png"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_mayonnaise => nrel_type:concept_sauce;;
+
+
+concept_mayonnaise => nrel_kkal : 680_kkal
+(*
+=> nrel_main_idtf:
+[680 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+
+concept_mayonnaise => nrel_price : 1_rub
+(*
+=> nrel_main_idtf:
+[1 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+
+
+
+concept_mayonnaise => nrel_storage_time: 1_moth
+(*
+=> nrel_main_idtf:
+[1 месяц]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+
+
+
+concept_mayonnaise => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+*);;
+
+
+concept_mayonnaise => nrel_glycemic_index: 60
+(*
+=> nrel_main_idtf:
+[60]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+
+concept_mayonnaise => nrel_analog: concept_ketchup;;

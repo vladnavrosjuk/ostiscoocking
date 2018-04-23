@@ -1,0 +1,79 @@
+sc_node_not_relation -> concept_cottage_cheese;;
+
+concept_cottage_cheese => nrel_main_idtf:
+[творог] (* <- lang_ru;; *);
+[cottage cheese] (* <- lang_en;; *);;
+concept_cottage_cheese <- concept_ingridient;;
+concept_cottage_cheese<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/cottage_cheese.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_cottage_cheese => nrel_type:concept_dairy;;
+concept_cottage_cheese => nrel_kkal :121_kkal
+
+(*
+=> nrel_main_idtf:
+[121 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+
+concept_cottage_cheese => nrel_glycemic_index: 30
+
+(*
+=> nrel_main_idtf:
+[30]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+concept_cottage_cheese => nrel_price : 10_rub
+(*
+=> nrel_main_idtf:
+[10 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+concept_cottage_cheese => nrel_storage_time: 4_days
+
+(*
+=> nrel_main_idtf:
+[4 суток]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_cottage_cheese => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+
+*);;
+concept_cottage_cheese => nrel_analog: concept_ricotta;;
+

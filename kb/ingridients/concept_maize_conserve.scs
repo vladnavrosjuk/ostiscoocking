@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_maize_conserve;;
+
+concept_maize_conserve => nrel_main_idtf:
+[консервированная кукуруза] (* <-lang_ru;;*);
+[maize_conserve] (* <-lang_en;; *);;
+concept_maize_conserve <- concept_ingridient;;
+concept_maize_conserve <- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/maize_conserve.jpeg"
+(*
+=> nrel_format: format_jpeg;;
+*);;
+*);;
+*);;
+
+concept_maize_conserve => nrel_type: beans;;
+concept_maize_conserve => nrel_protein : 2_protein
+
+(*
+=> nrel_main_idtf:
+[2% белков]
+(*
+<- lang_ru;;
+*);;
+			
+<- concept_protein;;
+*);;
+concept_maize_conserve => nrel_storage_time: 2_day
+
+(*
+=> nrel_main_idtf:
+[2 дня]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_maize_conserve => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_maize_conserve => nrel_analog: concept_green_peas;;

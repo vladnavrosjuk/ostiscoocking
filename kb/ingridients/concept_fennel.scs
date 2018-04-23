@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_fennel;;
+
+concept_fennel => nrel_main_idtf:
+[петрушка] (* <-lang_ru;;*);
+[fennel] (* <-lang_en;; *);;
+concept_fennel <- concept_ingridient;;
+concept_fennel <- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/fennel.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_millet => nrel_type: concept_herb;;
+concept_fennel => nrel_protein : 4_protein
+
+(*
+=> nrel_main_idtf:
+[4% белков]
+(*
+<- lang_ru;;
+*);;
+			
+<- concept_protein;;
+*);;
+concept_fennel => nrel_storage_time: 1_week
+
+(*
+=> nrel_main_idtf:
+[1 неделя]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_fennel => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_fennel => nrel_analog: concept_parsley;;

@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_beans;;
+
+concept_beans => nrel_main_idtf:
+[бобы] (* <- lang_ru;; *);
+[beans] (* <- lang_en;; *);;

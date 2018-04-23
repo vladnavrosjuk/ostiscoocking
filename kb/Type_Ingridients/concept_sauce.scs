@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_sauce;;
+
+concept_sauce => nrel_main_idtf:
+[соус] (* <- lang_ru;; *);
+[sauce] (* <- lang_en;; *);;

@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_herb;;
+
+concept_herb => nrel_main_idtf:
+[зелень] (* <- lang_ru;; *);
+[herb] (* <- lang_en;; *);;

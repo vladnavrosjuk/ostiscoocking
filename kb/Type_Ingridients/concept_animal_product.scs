@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_animal_product;;
+
+concept_animal_product => nrel_main_idtf:
+[продукт жизнедеятельности животных] (* <- lang_ru;; *);
+[animal product] (* <- lang_en;; *);;

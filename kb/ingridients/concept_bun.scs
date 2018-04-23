@@ -1,0 +1,83 @@
+sc_node_not_relation -> concept_bun;;
+
+concept_bun => nrel_main_idtf:
+[сыр] (* <- lang_ru;; *);
+[cheese] (* <- lang_en;; *);;
+concept_bun <- concept_ingridient;;
+concept_bun<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/bun.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_bun => nrel_type:concept_bakery;;
+
+
+concept_bun => nrel_kkal : 320_kkal
+(*
+=> nrel_main_idtf:
+[320 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_bun => nrel_price : 3_rub
+(*
+=> nrel_main_idtf:
+[3 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+
+
+
+concept_bun => nrel_storage_time: 3_weeks
+(*
+=> nrel_main_idtf:
+[3 недели]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+
+
+
+concept_bun => nrel_storage_conditions: breadbasket 
+(*
+=> nrel_main_idtf:
+[в хлебнице]
+(*
+<- lang_ru;;
+*);;
+*);;
+
+
+concept_bun => nrel_glycemic_index: 61
+
+(*
+=> nrel_main_idtf:
+[61]
+(*
+<- lang_ru;;
+*);;
+<- concept_glycemic_index;;
+*);;
+
+
+
+concept_bun => nrel_analog: concept_bread;;

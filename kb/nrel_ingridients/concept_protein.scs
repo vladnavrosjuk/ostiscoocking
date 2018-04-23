@@ -1,0 +1,7 @@
+sc_node_not_relation -> concept_protein;;
+
+concept_protein => nrel_main_idtf:
+[белок] (* <- lang_ru;; *);
+[protein] (* <- lang_en;; *);;
+
+

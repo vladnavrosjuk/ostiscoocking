@@ -1,0 +1,78 @@
+sc_node_not_relation -> concept_lemon_zest;;
+
+concept_lemon_zest => nrel_main_idtf:
+[лимонная цедра] (* <- lang_ru;; *);
+[lemon zest] (* <- lang_en;; *);;
+concept_lemon_zest <- concept_ingridient;;
+concept_lemon_zest<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/lemon_zest.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_lemon_zest => nrel_type:concept_fruit;;
+concept_lemon_zest => nrel_kkal : 16_kkal
+
+(*
+=> nrel_main_idtf:
+[16 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+
+concept_lemon_zest => nrel_glycemic_index: 1
+
+(*
+=> nrel_main_idtf:
+[1]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+concept_lemon_zest => nrel_price : 20_rub
+(*
+=> nrel_main_idtf:
+[20 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+
+concept_lemon_zest => nrel_storage_time: 7_months
+
+(*
+=> nrel_main_idtf:
+[7 месяцев]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_lemon_zest => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+
+*);;

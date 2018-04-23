@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_fetus;;
+
+concept_fetus => nrel_main_idtf:
+[плод] (* <- lang_ru;; *);
+[fetus] (* <- lang_en;; *);;

@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_fatty_product;;
+
+concept_fatty_product => nrel_main_idtf:
+[жировой продукт] (* <- lang_ru;; *);
+[fatty product] (* <- lang_en;; *);;

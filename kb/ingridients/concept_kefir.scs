@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_kefir;;
+
+concept_kefir => nrel_main_idtf:
+[кефир] (* <-lang_ru;;*);
+[kefir] (* <-lang_en;; *);;
+concept_kefir <- concept_ingridient;;
+concept_kefir <- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/kefir.jpeg"
+(*
+=> nrel_format: format_jpeg;;
+*);;
+*);;
+*);;
+
+concept_kefir => nrel_type: concept_milk_product;;
+concept_kefir => nrel_protein : 3_protein
+
+(*
+=> nrel_main_idtf:
+[3% белков]
+(*
+<- lang_ru;;
+*);;
+			
+<- concept_protein;;
+*);;
+concept_kefir => nrel_storage_time: 1_week
+
+(*
+=> nrel_main_idtf:
+[1 неделю]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_kefir => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_kefir => nrel_analog: concept_sour_cream;;

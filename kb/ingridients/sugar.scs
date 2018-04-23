@@ -1,0 +1,79 @@
+sc_node_not_relation -> concept_sugar;;
+
+concept_sugar => nrel_main_idtf:
+[сахар] (* <- lang_ru;; *);
+[sugar] (* <- lang_en;; *);;
+concept_sugar <- concept_ingridient;;
+concept_sugar<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/sugar.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_sugar => nrel_type:concept_grocery;;
+concept_sugar => nrel_kkal : 398_kkal
+
+(*
+=> nrel_main_idtf:
+[398 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+
+concept_sugar => nrel_glycemic_index: 70
+
+(*
+=> nrel_main_idtf:
+[70]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+concept_sugar => nrel_price : 2_rub
+(*
+=> nrel_main_idtf:
+[2 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+
+concept_sugar => nrel_storage_time: 8_years
+
+(*
+=> nrel_main_idtf:
+[8 лет]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_sugar => nrel_storage_conditions: dry_place
+
+(*
+=> nrel_main_idtf:
+[в сухом месте]
+(*
+<- lang_ru;;
+*);;
+
+
+
+*);;
+concept_sugar => nrel_analog: concept_fructose;;

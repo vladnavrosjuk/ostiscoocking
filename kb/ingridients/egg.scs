@@ -1,0 +1,78 @@
+sc_node_not_relation -> concept_egg;;
+
+concept_egg => nrel_main_idtf:
+[яйцо] (* <- lang_ru;; *);
+[egg] (* <- lang_en;; *);;
+concept_egg <- concept_ingridient;;
+concept_egg<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/egg.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_egg => nrel_type:concept_animal_product;;
+concept_egg => nrel_kkal : 157_kkal
+
+(*
+=> nrel_main_idtf:
+[157 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+
+concept_egg => nrel_glycemic_index: 0
+
+(*
+=> nrel_main_idtf:
+[0]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+concept_egg => nrel_price : 2_rub
+(*
+=> nrel_main_idtf:
+[2 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+concept_egg => nrel_storage_time: 25_days
+
+(*
+=> nrel_main_idtf:
+[25 дней]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_egg => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+
+*);;
+

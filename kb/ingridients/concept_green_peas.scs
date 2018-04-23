@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_green_peas;;
+
+concept_green_peas => nrel_main_idtf:
+[зеленый горошек] (* <-lang_ru;;*);
+[green_peas] (* <-lang_en;; *);;
+concept_green_peas <- concept_ingridient;;
+concept_green_peas <- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/green_peas.jpeg"
+(*
+=> nrel_format: format_jpeg;;
+*);;
+*);;
+*);;
+
+concept_green_peas => nrel_type: concept_beans;;
+concept_green_peas => nrel_protein : 2_protein
+
+(*
+=> nrel_main_idtf:
+[5% белков]
+(*
+<- lang_ru;;
+*);;
+			
+<- concept_protein;;
+*);;
+concept_green_peas => nrel_storage_time: 11_day
+
+(*
+=> nrel_main_idtf:
+[11 дней]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_green_peas => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_green_peas => nrel_analog: concept_maize_conserve;;

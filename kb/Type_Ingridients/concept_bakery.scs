@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_bakery;;
+
+concept_bakery => nrel_main_idtf:
+[хлебопекарное изделие] (* <- lang_ru;; *);
+[bakery] (* <- lang_en;; *);;

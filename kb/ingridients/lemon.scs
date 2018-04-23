@@ -1,0 +1,93 @@
+sc_node_not_relation -> concept_lemon;;
+
+concept_lemon => nrel_main_idtf:
+[лимон] (* <- lang_ru;; *);
+[lemon] (* <- lang_en;; *);;
+concept_lemon <- concept_ingridient;;
+concept_lemon<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/lemon.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_lemon => nrel_type:concept_fruit;;
+concept_lemon => nrel_kkal : 29_kkal
+
+(*
+=> nrel_main_idtf:
+[29 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+
+concept_lemon => nrel_glycemic_index: 25
+
+(*
+=> nrel_main_idtf:
+[25]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+concept_lemon => nrel_price : 3_rub
+(*
+=> nrel_main_idtf:
+[3 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+concept_lemon => nrel_inclusion: concept_lemon_zest
+
+(*
+=> nrel_main_idtf:
+[лимонная цедра]
+(*
+<- lang_ru;;
+*);;
+*);;
+
+
+concept_lemon => nrel_storage_time: 7_months
+
+(*
+=> nrel_main_idtf:
+[7 месяцев]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+
+concept_lemon => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+
+
+
+*);;
+concept_lemon => nrel_analog: concept_lime;;
+

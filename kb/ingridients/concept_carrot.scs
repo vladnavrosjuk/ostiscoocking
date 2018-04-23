@@ -1,0 +1,84 @@
+sc_node_not_relation -> concept_carrot;;
+
+concept_carrot => nrel_main_idtf:
+[морковь] (* <- lang_ru;; *);
+[carrot] (* <- lang_en;; *);;
+concept_carrot <- concept_ingridient;;
+concept_carrot<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/carrot.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_carrot => nrel_type:concept_vegetable;;
+
+
+concept_carrot => nrel_kkal : 41_kkal
+(*
+=> nrel_main_idtf:
+[41 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_carrot => nrel_price : 1_rub
+(*
+=> nrel_main_idtf:
+[1 рубль]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+
+
+
+concept_carrot => nrel_storage_time: 8_moth
+(*
+=> nrel_main_idtf:
+[8 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+
+
+
+concept_carrot => nrel_storage_conditions: dry_cool_room
+(*
+=> nrel_main_idtf:
+[сухое прохладное помещение]
+(*
+<- lang_ru;;
+*);;
+*);;
+
+
+concept_carrot => nrel_glycemic_index: 35
+
+(*
+=> nrel_main_idtf:
+[35]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+
+
+concept_carrot => nrel_analog: concept_onion;;

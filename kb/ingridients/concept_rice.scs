@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_rice;;
+
+concept_rice => nrel_main_idtf:
+[рис] (* <-lang_ru;;*);
+[rice] (* <-lang_en;; *);;
+concept_rice <- concept_ingridient;;
+concept_rice <- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/rice.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_rice => nrel_type:concept_cereal;;
+concept_rice => nrel_protein : 7_protein
+
+(*
+=> nrel_main_idtf:
+[7% белков]
+(*
+<- lang_ru;;
+*);;
+			
+<- concept_protein;;
+*);;
+concept_rice => nrel_storage_time: 12_month
+
+(*
+=> nrel_main_idtf:
+[12 месяцев]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_rice => nrel_storage_conditions: dry_place
+
+(*
+=> nrel_main_idtf:
+[в сухом месте]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_rice => nrel_analog: concept_millet;;
+

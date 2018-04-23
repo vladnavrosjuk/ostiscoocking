@@ -1,0 +1,79 @@
+sc_node_not_relation -> concept_ricotta;;
+
+concept_ricotta => nrel_main_idtf:
+[рикотта] (* <- lang_ru;; *);
+[ricotta] (* <- lang_en;; *);;
+concept_ricotta <- concept_ingridient;;
+concept_ricotta<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/ricotta.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_ricotta => nrel_type:concept_dairy;;
+concept_ricotta => nrel_kkal :174_kkal
+
+(*
+=> nrel_main_idtf:
+[174 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+
+concept_ricotta => nrel_glycemic_index: 27
+
+(*
+=> nrel_main_idtf:
+[27]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+concept_ricotta => nrel_price : 10_rub
+(*
+=> nrel_main_idtf:
+[10 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+
+concept_ricotta => nrel_storage_time: 20_days
+
+(*
+=> nrel_main_idtf:
+[20 суток]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_ricotta => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+
+*);;
+concept_ricotta => nrel_analog: concept_cottage_cheese;;

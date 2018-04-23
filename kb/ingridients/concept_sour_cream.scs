@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_sour_cream;;
+
+concept_sour_cream => nrel_main_idtf:
+[сметана] (* <-lang_ru;;*);
+[sour_cream] (* <-lang_en;; *);;
+concept_sour_cream <- concept_ingridient;;
+concept_sour_cream <- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/sour_cream.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_sour_cream => nrel_type: concept_milk_product;;
+concept_sour_cream => nrel_type: concept_sauce;;
+concept_sour_cream => nrel_protein : 3_protein
+
+(*
+=> nrel_main_idtf:
+[3% белков]
+(*
+<- lang_ru;;
+*);;
+			
+<- concept_protein;;
+*);;
+concept_sour_cream => nrel_storage_time: 3_weeks
+
+(*
+=> nrel_main_idtf:
+[3 недели]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_sour_cream => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+*);;
+concept_sour_cream => nrel_analog: concept_kefir;;

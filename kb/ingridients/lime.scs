@@ -1,0 +1,80 @@
+sc_node_not_relation -> concept_lime;;
+
+concept_lime => nrel_main_idtf:
+[лайм] (* <- lang_ru;; *);
+[lime] (* <- lang_en;; *);;
+concept_lime <- concept_ingridient;;
+concept_lime<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://images/lime.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_lime => nrel_type:concept_fruit;;
+concept_lime => nrel_kkal :30_kkal
+
+(*
+=> nrel_main_idtf:
+[174 ккал]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_kkal;;
+*);;
+
+concept_lime => nrel_glycemic_index: 20
+
+(*
+=> nrel_main_idtf:
+[20]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+concept_lime => nrel_price : 6_rub
+(*
+=> nrel_main_idtf:
+[6 рублей]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+
+concept_lime => nrel_storage_time: 20_days
+
+(*
+=> nrel_main_idtf:
+[20 суток]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_time;;
+*);;
+concept_lime => nrel_storage_conditions: refrigerator
+
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+
+
+
+*);;
+concept_lime => nrel_analog: concept_lemon;;
+

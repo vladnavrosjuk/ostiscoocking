@@ -1,0 +1,84 @@
+sc_node_not_relation -> concept_cheese;;
+
+concept_cheese => nrel_main_idtf:
+[сыр] (* <- lang_ru;; *);
+[cheese] (* <- lang_en;; *);;
+concept_cheese <- concept_ingridient;;
+concept_cheese<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://pictures/cheese.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+
+concept_cheese => nrel_type:concept_milk_product;;
+
+
+concept_cheese => nrel_kkal : 375_kkal
+(*
+=> nrel_main_idtf:
+[375 ккал]
+(*
+<- lang_ru;;
+*);;
+<- concept_kkal;;
+*);;
+
+
+
+concept_cheese => nrel_price : 4_rub
+(*
+=> nrel_main_idtf:
+[4 рубля]
+(*
+<- lang_ru;;
+*);;
+<- concept_price;;
+*);;
+
+
+
+
+concept_cheese => nrel_storage_time: 6_moth
+(*
+=> nrel_main_idtf:
+[6 месяцев]
+(*
+<- lang_ru;;
+*);;
+<- concept_time;;
+*);;
+
+
+
+concept_cheese => nrel_storage_conditions: refrigerator
+(*
+=> nrel_main_idtf:
+[в холодильнике]
+(*
+<- lang_ru;;
+*);;
+*);;
+
+
+concept_cheese => nrel_glycemic_index: 57
+
+(*
+=> nrel_main_idtf:
+[57]
+(*
+<- lang_ru;;
+*);;
+
+<- concept_glycemic_index;;
+*);;
+
+
+
+concept_cheese => nrel_analog: concept_salad;;
