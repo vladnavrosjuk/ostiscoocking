@@ -1,0 +1,31 @@
+sc_node_struct -> subject_domain_of_ingridients;;
+
+subject_domain_of_ingridients
+=> nrel_main_idtf:
+	[Предметная область ингредиентов]
+	(* <- lang_ru;; *);
+=> nrel_main_idtf:
+	[Subject domain of ingridients]
+	(* <- lang_en;; *);;
+
+
+
+subject_domain_of_ingridients -> rrel_maximum_studied_object_class: 
+	concept_chickpea;
+	concept_cucumber;
+	concept_mayonnaise;
+	concept_potato;
+	concept_ricotta;;
+
+subject_domain_of_ingridients -> rrel_explored_relation: 
+	nrel_glycemic_index;
+	nrel_analog;
+	nrel_ingridients;
+	nrel_kkal;
+	nrel_storage_conditions;
+	nrel_storage_time;
+	nrel_price;;
+
+	
+
+subject_domain_of_ingridients <- subject_domain;;

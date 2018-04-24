@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_dairy;;
+
+concept_dairy => nrel_main_idtf:
+[молочный продукт] (* <- lang_ru;; *);
+[dairy] (* <- lang_en;; *);;

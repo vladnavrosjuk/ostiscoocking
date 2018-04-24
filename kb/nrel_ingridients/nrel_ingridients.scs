@@ -1,10 +1,10 @@
     sc_node_norole_relation -> nrel_ingridients;;
 
-    nrel_ingridients=> nrel_main_idtf:[ингридиент*] (* <- lang_ru;; *);;
+    nrel_ingridients=> nrel_main_idtf:[ингредиент*] (* <- lang_ru;; *);;
     nrel_ingridients=> nrel_main_idtf: [ingridient*] (* <- lang_en;; *);;
 
-    nrel_ingridients=> nrel_idtf: [быть ингридиентом*] (* <- lang_ru;; *);;
-    nrel_ingridients=> nrel_idtf: [быть ингридиентом рецепта*] (* <- lang_ru;; *);;
+    nrel_ingridients=> nrel_idtf: [быть ингредиентом*] (* <- lang_ru;; *);;
+    nrel_ingridients=> nrel_idtf: [быть ингредиентом рецепта*] (* <- lang_ru;; *);;
 
 
 

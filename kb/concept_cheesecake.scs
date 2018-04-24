@@ -1,0 +1,27 @@
+
+sc_node_not_relation -> concept_cheesecake;;
+
+concept_cheesecake => nrel_main_idtf:
+[чизкейк] (* <- lang_ru;; *);
+[cheesecake] (* <- lang_en;; *);;
+concept_cheesecake <- concept_recept;;
+concept_cheesecake<- rrel_key_sc_element: ...
+(*
+<-sc_illustration;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example: "file://cheesecake.jpg"
+(*
+=> nrel_format: format_jpg;;
+*);;
+*);;
+*);;
+concept_cheesecake => nrel_ingridients: concept_sugar;;
+concept_cheesecake => nrel_ingridients: concept_butter;;
+concept_cheesecake => nrel_ingridients: concept_ricotta;;
+concept_cheesecake => nrel_ingridients: concept_egg;;
+concept_cheesecake => nrel_ingridients: concept_lemon_zest;;
+concept_cheesecake => nrel_ingridients: concept_vanillin
+;;
+
